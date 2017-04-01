@@ -11,8 +11,9 @@ characters includes:
 * [gnome-terminal](https://git.gnome.org/browse/gnome-terminal/) for a terminal emulator
 * [gruvbox](https://github.com/morhetz/gruvbox) color scheme for Vim (also available for [i3](https://github.com/acrisci/i3-style)
 * [spotify](http://spotify.com), of course
+* [workrave](http://www.workrave.org/) to stand up every once in a while
 * [hack](https://github.com/chrissimpkins/Hack) and [Ohsnap](https://sourceforge.net/projects/osnapfont/) fonts for terminal and status, respectively
-* vim [vundle](https://github.com/VundleVim/Vundle.vim) plugins:  [airline](https://github.com/vim-airline/vim-airline), [nerdtree](https://github.com/scrooloose/nerdtree), [jedi-vim](https://github.com/davidhalter/jedi-vim)
+* [vundle](https://github.com/VundleVim/Vundle.vim) plugins:  [airline](https://github.com/vim-airline/vim-airline), [nerdtree](https://github.com/scrooloose/nerdtree), [jedi-vim](https://github.com/davidhalter/jedi-vim)
 * [vimium](https://vimium.github.io/) for chrome
 
 ## Screenshot
@@ -25,7 +26,7 @@ My current war wagon is a custom [Magicforce 68](https://www.aliexpress.com/stor
 
 ![kb](images/kbf.jpg)
 
-and its sidekick, a [SixKeyBoard](https://techkeys.us/collections/keyboards/products/sixkeyboard) that I use for various things.
+and its sidekick, a [SixKeyBoard](https://techkeys.us/collections/keyboards/products/sixkeyboard) that I use for macros and various things.
 
 ![mp](images/mmf.jpg)
 
