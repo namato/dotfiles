@@ -6,14 +6,14 @@ characters includes:
 * i3 tiling window manager (the [i3-gaps fork](https://github.com/Airblader/i3))
 * [i3-blocks](https://github.com/vivien/i3blocks) for status
 * [font-awesome](http://fontawesome.io) for icons
-* [Compton](http://lubuntu.me/meet-compton/) for composing windows
+* [compton](http://lubuntu.me/meet-compton/) for composing windows
 * [variety](http://peterlevi.com/variety/how-to-install/) for backgrounds
-* [gnome-terminal](https://git.gnome.org/browse/gnome-terminal/] as the terminal emulator
+* [gnome-terminal](https://git.gnome.org/browse/gnome-terminal/) for a terminal emulator
 * [gruvbox](https://github.com/morhetz/gruvbox) color scheme for Vim (also available for [i3](https://github.com/acrisci/i3-style)
 * [spotify](http://spotify.com), of course
 * [hack](https://github.com/chrissimpkins/Hack) and [Ohsnap](https://sourceforge.net/projects/osnapfont/) fonts for terminal and status, respectively
 * vim [vundle](https://github.com/VundleVim/Vundle.vim) plugins:  [airline](https://github.com/vim-airline/vim-airline), [nerdtree](https://github.com/scrooloose/nerdtree), [jedi-vim](https://github.com/davidhalter/jedi-vim)
-* (vimium)[https://vimium.github.io/] for chrome
+* [vimium](https://vimium.github.io/) for chrome
 
 ## Screenshot
 
@@ -21,7 +21,7 @@ characters includes:
 
 ## Hardware
 
-My current war wagon is a custom [Magicforce 68](https://www.aliexpress.com/store/product/Balck-white-68-Key-PBT-compact-mini-mechanical-keyboard-kailh-mx-switches-game-Magicforce-68-mini/1806079_32471875698.html) with Gateron blacks.
+My current war wagon is a custom [Magicforce 68](https://www.aliexpress.com/store/product/Balck-white-68-Key-PBT-compact-mini-mechanical-keyboard-kailh-mx-switches-game-Magicforce-68-mini/1806079_32471875698.html) with Gateron blacks and some [RK doubleshot ABS keys](https://www.massdrop.com/buy/royal-kludge-doubleshot-abs-keycaps).
 
 ![kb](images/kbf.jpg)
 
