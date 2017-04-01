@@ -10,7 +10,7 @@ characters includes:
 * [variety](http://peterlevi.com/variety/how-to-install/) for backgrounds
 * [gnome-terminal](https://git.gnome.org/browse/gnome-terminal/) for a terminal emulator
 * [gruvbox](https://github.com/morhetz/gruvbox) color scheme for Vim (also available for [i3](https://github.com/acrisci/i3-style))
-* [spotify](http://spotify.com), of course
+* [spotify](http://spotify.com), [dropbox](https://www.dropbox.com/install-linux), and [evernote](http:./evernote.com) of course
 * [workrave](http://www.workrave.org/) to stand up every once in a while
 * [hack](https://github.com/chrissimpkins/Hack) and [Ohsnap](https://sourceforge.net/projects/osnapfont/) fonts for terminal and status, respectively
 * [vundle](https://github.com/VundleVim/Vundle.vim) plugins:  [airline](https://github.com/vim-airline/vim-airline), [nerdtree](https://github.com/scrooloose/nerdtree), [jedi-vim](https://github.com/davidhalter/jedi-vim)
