@@ -1,6 +1,6 @@
 ## My dotfiles collection
 
-This is a set of configuration files that I use for my X desktop. The all-star cast of
+This is a set of configuration files that I use for my X desktop, an Ubuntu 16.04 machine. The all-star cast of
 characters includes:
 
 * i3 tiling window manager (the [i3-gaps fork](https://github.com/Airblader/i3))
