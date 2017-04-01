@@ -22,12 +22,9 @@ characters includes:
 
 ## Hardware
 
-My current war wagon is a custom [Magicforce 68](https://www.aliexpress.com/store/product/Balck-white-68-Key-PBT-compact-mini-mechanical-keyboard-kailh-mx-switches-game-Magicforce-68-mini/1806079_32471875698.html) with Gateron blacks and some [RK doubleshot ABS keys](https://www.massdrop.com/buy/royal-kludge-doubleshot-abs-keycaps).
+My current war wagon is a custom [Magicforce 68](https://www.aliexpress.com/store/product/Balck-white-68-Key-PBT-compact-mini-mechanical-keyboard-kailh-mx-switches-game-Magicforce-68-mini/1806079_32471875698.html) with Gateron blacks and some [RK doubleshot ABS keycaps](https://www.massdrop.com/buy/royal-kludge-doubleshot-abs-keycaps).
 
 ![kb](images/kbf.jpg)
 
-and its sidekick, a [SixKeyBoard](https://techkeys.us/collections/keyboards/products/sixkeyboard) (with Cherry MX Blues) that I use for macros and various things.
-
-![mp](images/mmf.jpg)
 
 
