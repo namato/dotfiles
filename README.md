@@ -17,16 +17,16 @@ characters includes:
 
 ## Screenshot
 
-![ss](https://raw.github.com/namato/dotfiles/images/ss2.png)
+![screenshot](images/ss2.png)
 
 ## Hardware
 
 My current war wagon is a custom [Magicforce 68](https://www.aliexpress.com/store/product/Balck-white-68-Key-PBT-compact-mini-mechanical-keyboard-kailh-mx-switches-game-Magicforce-68-mini/1806079_32471875698.html) with Gateron blacks.
 
-![kb](https://raw.github.com/namato/dotfiles/images/kbf.jpg)
+![kb](images/kbf.jpg)
 
 and its sidekick, a [SixKeyBoard](https://techkeys.us/collections/keyboards/products/sixkeyboard) that I use for various things.
 
-![mp](http://raw.github.com/namato/dotfiles/images/mmf.jpg)
+![mp](images/mmf.jpg)
 
 
