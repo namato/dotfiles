@@ -26,7 +26,7 @@ My current war wagon is a custom [Magicforce 68](https://www.aliexpress.com/stor
 
 ![kb](images/kbf.jpg)
 
-and its sidekick, a [SixKeyBoard](https://techkeys.us/collections/keyboards/products/sixkeyboard) that I use for macros and various things.
+and its sidekick, a [SixKeyBoard](https://techkeys.us/collections/keyboards/products/sixkeyboard) (with Cherry MX Blues) that I use for macros and various things.
 
 ![mp](images/mmf.jpg)
 
