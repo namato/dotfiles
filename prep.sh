@@ -18,7 +18,8 @@ sudo apt-get -y install git libxcb1-dev libxcb-keysyms1-dev \
     libev-dev libxcb-cursor-dev libxcb-xinerama0-dev \
     libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev \
     autoconf vim-nox
-sudo apt-get -y install compton google-chrome-stable workrave i3blocks
+sudo apt-get -y install compton \
+    workrave 
 sudo apt-get -y install fonts-font-awesome fonts-hack-ttf
 git clone https://github.com/namato/dotfiles
 git clone https://www.github.com/Airblader/i3 i3-gaps
@@ -47,9 +48,9 @@ sudo apt-get install spotify-client
 # ohsnap font
 (cd /tmp && wget -O- https://sourceforge.net/projects/osnapfont/files/latest/download?source=directory | \
 	tar xvfz -)
-sudo mkdir -p /usr/share/myfonts
-sudo mv /tmp/myfonts/ohsnap-1.8.0 /usr/share/myfonts/
-(cd /usr/share/myfonts/ohsnap-1.8.0 && sudo mkfontdir && \
+sudo mkdir -p /usr/share/fonts/myfonts
+sudo mv /tmp/ohsnap-1.8.0 /usr/share/fonts/myfonts/
+(cd /usr/share/fonts/myfonts/ohsnap-1.8.0 && sudo mkfontdir && \
 	sudo xset +fp /usr/share/fonts/myfonts/ohsnap-1.8.0)
 sudo xset fp rehash
 
