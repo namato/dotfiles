@@ -1,0 +1,7 @@
+# User config
+set my_realname="My Realname"
+set my_username="username"
+set my_domain="domain.com"
+set my_password="mypasswd"
+set my_lang="en_US"
+# alternates othername@otherdomain.com

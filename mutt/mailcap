@@ -1,0 +1,15 @@
+#text/html; w3m -o auto_image=TRUE -I %{charset} -T text/html; copiousoutput
+text/html;  elinks -dump %s; nametemplate=%s.html; copiousoutput
+text/calendar; ~/.mutt/bin/mutt-ical.py -i -e "user@domain.com" %s
+text/calendar; mutt-ics; copiousoutput;
+application/ics; ~/.mutt/bin/mutt-ical.py -i -e "user@domain.com" %s
+application/ics; mutt-ics; copiousoutput;
+image/png;   ~/.mutt/bin/view-attachment %s png; copiousoutput;
+application/msword; ~/.mutt/bin/view-attachment %s "-" '/Applications/TextEdit.app'; copiousoutput;
+image/jpg;   ~/.mutt/bin/view-attachment %s jpg; copiousoutput;
+image/jpeg;  ~/.mutt/bin/view-attachment %s jpg; copiousoutput;
+image/pjpeg; ~/.mutt/bin/view-attachment %s jpg; copiousoutput;
+image/gif;   ~/.mutt/bin/view-attachment %s gif; copiousoutput;
+application/pdf; ~/.mutt/bin/view-attachment %s pdf; copiousoutput;
+application/octet-stream; ~/.mutt/bin/view-attachment %s "-"; copiousoutput;
+text/plain; vim %s; needsterminal;
