@@ -23,28 +23,26 @@ characters includes:
 ## Mutt address completion with Office 365 and LDAP
 
 I've yet to see a good writeup of how to do this, so here's the method
-I used.
+I used to get autocompletion working in Mutt.
 
 First run [davmail](http://http://davmail.sourceforge.net/) and
 configure it with the LDAP box checked (I start it in my .local/i3/config).
 
-Use the version of ldap.pl in this repo to set the
-```query_command
-```
-option in mutt. This will enable the completion of addresses after you type a name and hit <tab>.  See the
+Use the version of ldap.pl in this repo to set the 'query_command' option in mutt.
+This will enable the completion of addresses after you type a name and hit <tab>.  See the
 config files in mutt/ and scripts/ for details.
 
 ## Calcurse with Office 365
 
 One of the major drawbacks of [calcurse](http://calcurse.org/) is that
 it doesn't understand timezones.  Stupidly, this caused me to miss a
-meeting once.  Only once.  Follow this process to use calcurse for at
+meeting once.  Follow this process to use calcurse for at
 least a daily view of your calendar items.
 
 * Install and initialize [caldav](https://github.com/lfos/calcurse/tree/master/contrib/caldav) 
 according to the instructions.
 * In the file ~/.calcurse/caldav/config, add the following configuration option with a path
-to the ccursefix.sh file from this repo.
+to the ccursefix.sh file from the scripts/ directory here.
 ```
 Binary = /home/username/bin/ccursefix.sh
 ```
@@ -69,11 +67,11 @@ appointments directly to calcurse from mutt, see [here](http://hentenaar.com/kee
 
 ## Switching between notebook screen (eDP) and HDMI
 
-There's a handy script here called 
+There's a handy script here:
 ```
 switcheroo.sh
 ```
- that is run from <mod+shift>-s in i3 which toggles the screen between dual, extend, and one or the other.
+ that is run from <mod+shift> + s in i3 which toggles the screen between dual, extend, and one or the other.
 This is useful when bringing your laptop to meeting rooms and replugging/unplugging at your desk.  
 
 
