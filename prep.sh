@@ -17,7 +17,7 @@ sudo apt-get -y install git libxcb1-dev libxcb-keysyms1-dev \
     libyajl-dev libstartup-notification0-dev libxcb-randr0-dev \
     libev-dev libxcb-cursor-dev libxcb-xinerama0-dev \
     libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev \
-    autoconf vim-nox acpi
+    autoconf vim-nox acpi dmenu
 sudo apt-get -y install compton \
     workrave 
 sudo apt-get -y install fonts-font-awesome fonts-hack-ttf
