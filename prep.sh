@@ -8,7 +8,7 @@
 # at the time this is run
 
 # install prerequisites and essential packages
-sudo add-apt-repository ppa:aguignard/ppa
+sudo add-apt-repository -y ppa:aguignard/ppa
 sudo apt-get update
 sudo apt-get -y install wget
 sudo apt-get -y install libxcb-xrm-dev
@@ -17,12 +17,13 @@ sudo apt-get -y install git libxcb1-dev libxcb-keysyms1-dev \
     libyajl-dev libstartup-notification0-dev libxcb-randr0-dev \
     libev-dev libxcb-cursor-dev libxcb-xinerama0-dev \
     libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev \
-    autoconf vim-nox
+    autoconf vim-nox acpi
 sudo apt-get -y install compton \
     workrave 
 sudo apt-get -y install fonts-font-awesome fonts-hack-ttf
 git clone https://github.com/namato/dotfiles
 git clone https://www.github.com/Airblader/i3 i3-gaps
+git clone https://github.com/vivien/i3blocks i3blocks
 
 # build/install i3-gaps
 (cd i3-gaps && autoreconf --force --install && \
@@ -32,10 +33,13 @@ git clone https://www.github.com/Airblader/i3 i3-gaps
 	make && \
 	sudo make install)
 
+# build/install i3-blocks
+(cd i3blocks && sudo make install)
+
 # get variety
-sudo add-apt-repository ppa:peterlevi/ppa
+sudo add-apt-repository -y ppa:peterlevi/ppa
 sudo apt-get update
-sudo apt-get install variety variety-slideshow
+sudo apt-get -y install variety variety-slideshow
 
 # get spotify
 sudo apt-key adv --keyserver \
@@ -43,7 +47,8 @@ sudo apt-key adv --keyserver \
 echo deb http://repository.spotify.com stable non-free | \
     sudo tee /etc/apt/sources.list.d/spotify.list
 sudo apt-get update
-sudo apt-get install spotify-client
+sudo apt-get -y install spotify-client
+sudo apt-get -f install
 
 # ohsnap font
 (cd /tmp && wget -O- https://sourceforge.net/projects/osnapfont/files/latest/download?source=directory | \
