@@ -1,14 +1,14 @@
 #!/bin/bash
+T1=$(mktemp)
+IMPORTER=/home/namato/bin/fixtz.py
+CCURSE=/usr/local/bin/calcurse
 
-# this is only used for importing
-if [[ ! "$*" =~ '-i' ]] ; then
-	exec /usr/local/bin/calcurse $*
+if ! [[ $* =~ "-i" ]]; then
+    exec $CCURSE $*
 fi
 
-temp_file=$(mktemp)
-temp_file_out=$(mktemp)
 while read input; do
-    echo $input >> $temp_file
+    echo $input >> $T1
 done
-/home/namato/bin/fixtz.pl $temp_file $temp_file_out
-exec cat $temp_file_out | /usr/local/bin/calcurse $*
+
+exec $IMPORTER $T1 | tee $T1.out.bak | $CCURSE $*
