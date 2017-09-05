@@ -7,10 +7,20 @@
 
 # nick - swap caps/ctrl, maybe not the best place to do this
 exec --no-startup-id /usr/bin/setxkbmap -option "ctrl:swapcaps"
-exec --no-startup-id compton -f
 exec --no-startup-id variety
-exec --no-startup-id workrave
+exec --no-startup-id compton -cCGb --backend glx --vsync opengl -f
+#exec --no-startup-id workrave
+exec --no-startup-id xrandr --output HDMI-2 --left-of eDP-1
 exec --no-startup-id dropbox start
+exec --no-startup-id xset s off
+exec --no-startup-id davmail /home/namato/.config/davmail/davmail.properties
+exec --no-startup-id sudo systemctl restart network-manager
+exec --no-startup-id nm-applet
+
+# not the best place for this but usually starting email when also starting the WM
+exec --no-startup-id isbg.py --imaphost outlook.office365.com --imapuser xyz@xyz.com --spaminbox 'Junk Email' --verbose --delete > /tmp/isbg.log 2&>1 &
+
+#exec --no-startup-id calcurse-caldav --init=keep-remote
 
 for_window [class="xfreerdp"] floating enable
 
@@ -100,12 +110,15 @@ bindsym $mod+space focus mode_toggle
 # focus the parent container
 bindsym $mod+a focus parent
 
+# toggle monitor internal/external/duplicate
+bindsym $mod+Shift+s exec --no-startup-id /home/namato/bin/switcheroo.sh
+
 # focus the child container
 #bindsym $mod+d focus child
 #
 set $ws1 "1  "
-set $ws2 "2  "
-set $ws3 "3  "
+set $ws2 "2  "
+set $ws3 "3 "
 set $ws4 "4  "
 set $ws5 "5  "
 set $ws6 "6  "
@@ -122,6 +135,9 @@ bindsym F7 workspace $ws3
 bindsym F8 workspace $ws4
 bindsym F9 workspace $ws5
 bindsym F10 workspace $ws6
+
+# move whole workspaces to monitor
+bindsym $mod+m move workspace to output left
 
 # bindsym $mod+1 workspace $ws1
 # bindsym $mod+2 workspace $ws2
@@ -181,26 +197,36 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-	position top
+  position top
 
 	# disable wheel scrolling through workspaces
 	bindsym button4 nop
 	bindsym button5 nop
 
 	# first monitor, displayport 1
-	tray_output DP-1
+	tray_output eDP-1
 
 	workspace_buttons yes
 	strip_workspace_numbers no
-	font pango:Ohsnap 16
+	# font pango:Ohsnap 16
+	font pango:Monofur 18
 	tray_padding 10
         # status_command i3status
         status_command i3blocks -c /home/namato/.config/i3blocks/i3blocks.conf
+  colors {
+    separator #928374
+    background #282828
+    statusline #ebdbb2
+    focused_workspace #689d6a #689d6a #282828
+    active_workspace #1d2021 #1d2021 #928374
+    inactive_workspace #32302f #32302f #928374
+    urgent_workspace #cc241d #cc241d #ebdbb2
+  }
 }
 
 for_window [class="^.*"] border pixel 4
 gaps inner 10
-gaps outer 20
+gaps outer 15
 smart_gaps on
 smart_borders on
 
@@ -209,3 +235,8 @@ bindsym XF86AudioPlay exec playerctl play
 bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
+
+client.focused #689d6a #689d6a #282828 #282828
+client.focused_inactive #1d2021 #1d2021 #928374 #282828
+client.unfocused #32302f #32302f #928374 #282828
+client.urgent #cc241d #cc241d #ebdbb2 #282828
